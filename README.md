@@ -66,7 +66,9 @@ Ventajas:
 Code
 ==========================================================>
 
-import java.io.*;
+
+
+    import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.time.LocalDateTime;
@@ -76,7 +78,6 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 public class CurrencyConverter {
-
     private static final String API_URL = "https://v6.exchangerate-api.com/v6/tuAPIKey/latest/";
     private static final String LOG_FILE = "log.txt";
     private static Map<String, String> supportedCurrencies = new HashMap<>();
