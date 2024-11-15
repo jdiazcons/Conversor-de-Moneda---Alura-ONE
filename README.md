@@ -64,20 +64,18 @@ Ventajas:
  - Soporte flexible: Se adapta fácilmente para incluir más monedas o funcionalidades adicionales.
 
 Code
-==========================================================>
-
-
 
     import java.io.*;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.*;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+    import java.net.HttpURLConnection;
+    import java.net.URL;
+    import java.time.LocalDateTime;
+    import java.time.format.DateTimeFormatter;
+    import java.util.*;
+    import com.google.gson.JsonObject;
+    import com.google.gson.JsonParser;
 
-public class CurrencyConverter {
+    public class CurrencyConverter {
+
     private static final String API_URL = "https://v6.exchangerate-api.com/v6/tuAPIKey/latest/";
     private static final String LOG_FILE = "log.txt";
     private static Map<String, String> supportedCurrencies = new HashMap<>();
@@ -134,7 +132,7 @@ public class CurrencyConverter {
         supportedCurrencies.put("CHF", "Franco suizo");
         supportedCurrencies.put("CNY", "Yuan chino");
         supportedCurrencies.put("MXN", "Peso mexicano");
-        // Agregar más monedas según sea necesario
+        // Puedes agregar más monedas según sea necesario
     }
 
     private static void loadSupportedCurrencies() {
@@ -260,3 +258,4 @@ public class CurrencyConverter {
         }
     }
 }
+
